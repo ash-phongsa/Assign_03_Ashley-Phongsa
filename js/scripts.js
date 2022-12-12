@@ -8,7 +8,7 @@ $("#apple-button").on("click", death)
 function foodClick() {
     foodClicks += 1;
     document.getElementById("foodClick").innerHTML = foodClicks;
-    $(".grid-dish").html("<div><img src='/imgs/meat dish.png'></div><img src='/imgs/apple.png' alt='apple'>")
+    $(".grid-dish").html("<div><img src='/imgs/meat dish.png' alt='meatbowl'></div><img src='/imgs/apple.png' alt='apple-still'>")
     $("body").css("background-image", "url(../imgs/animals.png)")
 
     if(foodClicks >= 20) {
@@ -25,7 +25,7 @@ function foodClick() {
 function waterClick() {
     waterClicks += 1;
     document.getElementById("waterClick").innerHTML = waterClicks;
-    $(".grid-dish").html("<div><img src='/imgs/water dish.png'></div><img src='/imgs/apple.png' alt='apple'>")
+    $(".grid-dish").html("<div><img src='/imgs/water dish.png' alt='waterbowl'></div><img src='/imgs/apple.png' alt='apple-still'>")
     $("body").css("background-image", "url(../imgs/rain_gif.gif)")
 
     if(waterClicks >= 20) {
