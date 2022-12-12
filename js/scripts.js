@@ -9,10 +9,7 @@ function foodClick() {
     foodClicks += 1;
     document.getElementById("foodClick").innerHTML = foodClicks;
     $(".grid-dish").html("<div><img id='bowl' src='imgs/meat dish.png' alt='meatbowl'></div><img id='pompom' src='imgs/apple.png' alt='apple-still'>")
-
-    if(foodClicks >= 1) {
-        $("body").css("background-image", "url(imgs/animals.png)")
-    }
+    $("body").css("background-image", "url(imgs/win.png)")
     
     if(foodClicks >= 20) {
         $("#apple").html("<div></div><div class='grid-dish'><div><img id='bowl' src='imgs/meat dish.png'></div><img id='pompom' src='imgs/apple_gif.gif' alt='dance'></div>")
