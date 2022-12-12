@@ -17,7 +17,7 @@ function foodClick() {
 
     if(waterClicks >= 100 && foodClicks >=100) {
         $("#page").empty()
-        $("body").css("background-image", "url(../imgs/win.png)")
+        $("body").css("background-image", "url(/imgs/win.png)")
         $("#page").html("<div></div><h1>Pompom has grown into a beautiful creature due to your efforts. Thank you for giving yourself carpal tunnel.</h1>")
     }
 }
@@ -34,14 +34,14 @@ function waterClick() {
 
     if(waterClicks >= 100 && foodClicks >=100) {
         $("#page").empty()
-        $("body").css("background-image", "url(../imgs/win.png)")
+        $("body").css("background-image", "url(/imgs/win.png)")
         $("#page").html("<div></div><h1>Pompom has grown into a beautiful creature due to your efforts. Thank you for giving yourself carpal tunnel.</h1>")
     }
 }
 
 function death() {
     $("#page").empty()
-    $("body").css("background-image", "url(../imgs/death.png)")
+    $("body").css("background-image", "url(/imgs/death.png)")
     $("#page").html("<div></div><h1>You sick freak! They were allergic to apples!!</h1>")
 }
 
