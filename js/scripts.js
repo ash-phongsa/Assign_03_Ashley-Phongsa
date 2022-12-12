@@ -8,11 +8,11 @@ $("#apple-button").on("click", death)
 function foodClick() {
     foodClicks += 1;
     document.getElementById("foodClick").innerHTML = foodClicks;
-    $(".grid-dish").html("<div><img src='imgs/meat dish.png' alt='meatbowl'></div><img src='imgs/apple.png' alt='apple-still'>")
+    $(".grid-dish").html("<div><img id='bowl' src='imgs/meat dish.png' alt='meatbowl'></div><img id='pompom' src='imgs/apple.png' alt='apple-still'>")
     $("body").css("background-image", "url(../imgs/animals.png)")
 
     if(foodClicks >= 20) {
-        $("#apple").html("<div></div><div class='grid-dish'><div><img src='imgs/meat dish.png'></div><img src='imgs/apple_gif.gif' alt='dance'></div>")
+        $("#apple").html("<div></div><div class='grid-dish'><div><img id='bowl' src='imgs/meat dish.png'></div><img id='pompom' src='imgs/apple_gif.gif' alt='dance'></div>")
     }
 
     if(waterClicks >= 100 && foodClicks >=100) {
