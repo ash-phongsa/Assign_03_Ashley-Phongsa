@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Jua';
+    background-image: url(../imgs/background-desktop.png);
+    background-size: cover;
+    margin: 0;
+}
+
+.wrapper {
+    padding: 10px 10px;
+}
+.container {
+    max-width: 1440px;
+    max-height: 1024px;
+    margin: auto;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: none;
+}
+
+.interface ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding: 0;
+}
+
+img {
+    max-height: 300px;
+}
+
+.grid-apple {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-dish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#apple img {
+    max-height: 600px;
+}
+
+p {
+    padding-top: px;
+    color: #E8E2BA;
+    font-size: 48px;
+}
+
+.myCounters {
+    padding-top: 150px;
+    padding-left: 40px;
+}
+
+h1 {
+    color: #E8E2BA;
+    text-align: center;
+}
+
+.reset-button {
+    width: 100%;
+    padding: 30px 40px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .2s;
+    background-color: #4EC79C;
+}
+
+
+
