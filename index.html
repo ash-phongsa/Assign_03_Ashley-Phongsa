@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+Click counter code from ReeCube on StackOverflow
+https://stackoverflow.com/questions/22402777/html-javascript-button-click-counter 
+-->
+<head>
+    <meta charset="=utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Pompom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="page" class="grid-parent container">
+        <div>
+            <nav class="interface">
+                <div type="button" onClick="foodClick()">
+                    <img id="meat-button" src="imgs/desktop icons/meat_icon.png" alt="meat_icon">
+                </div>
+                <div type="button" onClick="waterClick()">
+                    <img id="water-button" src="imgs/desktop icons/water_icon.png" alt="water_icon">
+                </div>
+                <div id="apple-button">
+                    <img id="apple-button" src="imgs/desktop icons/apple_icon.png" alt="apple_icon">
+                </div>
+            </nav>
+        </div>
+        <div id="apple" class="grid-apple">
+            <div></div>
+            <div class="grid-dish">
+                <div><img src="/imgs/empty_dish.png"></div>
+                <img src="/imgs/apple.png" alt="apple">
+            </div>
+        </div>
+        <div class="myCounters">
+            <p>FOOD: <a id="foodClick">0</a></p>
+            <p>WATER: <a id="waterClick">0</a></p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
